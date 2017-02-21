@@ -37,7 +37,14 @@ public class BestPongEver{
 			}
 			newBall.setYPosition(y+ymove);
 			
-		
+			if (newGame.upPressed() == true){
+				newGame.pause();
+				newRectangle1.setYPosition(newRectangle1.getYPosition() - 3);
+			}
+			if (newGame.downPressed() == true){
+				newGame.pause();
+				newRectangle1.setYPosition(newRectangle1.getYPosition() + 3);
+			}
 		
 		}
 		
